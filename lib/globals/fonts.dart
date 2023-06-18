@@ -13,8 +13,17 @@ class AppTextStyle{
   static TextStyle montesaratStyle(){
     return GoogleFonts.montserrat(
       color: Colors.white,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w600,
       fontSize: 24,
+    );
+  }
+
+  static TextStyle headingStyles(){
+    return GoogleFonts.rubikMoonrocks(
+      fontSize: 36,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+      letterSpacing: 2,
     );
   }
 

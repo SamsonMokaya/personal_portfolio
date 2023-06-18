@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personalportfolio/fonts.dart';
+import 'package:personalportfolio/globals/Constants.dart';
+import 'package:personalportfolio/globals/fonts.dart';
 import 'package:personalportfolio/globals/colors.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,6 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Appcolors.bgColor,
       appBar: AppBar(
@@ -31,14 +33,30 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Text('Hello It\'s Me', style: AppTextStyle.headerTextStyle(),)
-            ],
-          ),
-        ],
+      body: SingleChildScrollView(
+        padding: EdgeInsets.only(
+            top: size.height*0.3,
+            left: size.width*0.2,
+            right: size.width*0.2),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Hello It\'s Me', style: AppTextStyle.montesaratStyle(),),
+                    Constants.sizedBox(height: 15),
+                    Text('Samson Mokaya', style: AppTextStyle.headingStyles(),),
+                    Constants.sizedBox(height: 15),
+                    Text('And I\'m a FullStack developer', style: AppTextStyle.montesaratStyle(),)
+
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
