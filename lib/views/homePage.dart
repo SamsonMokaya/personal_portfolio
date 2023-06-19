@@ -46,18 +46,18 @@ class HomePage extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Hello It\'s Me', style: AppTextStyle.montesaratStyle(),),
+                    Text('Hello It\'s Me', style: AppTextStyle.montesaratStyle(color: Colors.white),),
                     Constants.sizedBox(height: 15),
                     Text('Samson Mokaya', style: AppTextStyle.headingStyles(),),
                     Constants.sizedBox(height: 15),
                     Row(
                       children: [
-                        Text('And I\'m a ', style: AppTextStyle.montesaratStyle(),),
+                        Text('And I\'m a ', style: AppTextStyle.montesaratStyle(color: Colors.white),),
                         AnimatedTextKit(animatedTexts: [
-                          TyperAnimatedText('Mobile Developer', textStyle: AppTextStyle.montesaratStyle()),
-                          TyperAnimatedText('Web Developer', textStyle: AppTextStyle.montesaratStyle()),
-                          TyperAnimatedText('UIUX Designer', textStyle: AppTextStyle.montesaratStyle()),
-                          TyperAnimatedText('Youtuber', textStyle: AppTextStyle.montesaratStyle()),
+                          TyperAnimatedText('Mobile Developer', textStyle: AppTextStyle.montesaratStyle(color: Colors.lightBlue)),
+                          TyperAnimatedText('Web Developer', textStyle: AppTextStyle.montesaratStyle(color: Colors.lightBlue)),
+                          TyperAnimatedText('UIUX Designer', textStyle: AppTextStyle.montesaratStyle(color: Colors.lightBlue)),
+                          TyperAnimatedText('Youtuber', textStyle: AppTextStyle.montesaratStyle(color: Colors.lightBlue)),
                         ])
                       ],
                     )

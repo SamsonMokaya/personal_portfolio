@@ -10,9 +10,9 @@ class AppTextStyle{
     );
   }
 
-  static TextStyle montesaratStyle(){
+  static TextStyle montesaratStyle({required Color color}){
     return GoogleFonts.montserrat(
-      color: Colors.white,
+      color: color,
       fontWeight: FontWeight.w600,
       fontSize: 24,
     );
