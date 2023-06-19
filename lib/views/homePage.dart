@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:personalportfolio/globals/Constants.dart';
 import 'package:personalportfolio/globals/fonts.dart';
@@ -49,7 +50,18 @@ class HomePage extends StatelessWidget {
                     Constants.sizedBox(height: 15),
                     Text('Samson Mokaya', style: AppTextStyle.headingStyles(),),
                     Constants.sizedBox(height: 15),
-                    Text('And I\'m a FullStack developer', style: AppTextStyle.montesaratStyle(),)
+                    Row(
+                      children: [
+                        Text('And I\'m a ', style: AppTextStyle.montesaratStyle(),),
+                        AnimatedTextKit(animatedTexts: [
+                          TyperAnimatedText('Mobile Developer', textStyle: AppTextStyle.montesaratStyle()),
+                          TyperAnimatedText('Web Developer', textStyle: AppTextStyle.montesaratStyle()),
+                          TyperAnimatedText('UIUX Designer', textStyle: AppTextStyle.montesaratStyle()),
+                          TyperAnimatedText('Youtuber', textStyle: AppTextStyle.montesaratStyle()),
+                        ])
+                      ],
+                    )
+
 
                   ],
                 ),
