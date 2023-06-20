@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.only(
-            top: size.height*0.3,
+            top: size.height*0.2,
             left: size.width*0.2,
             right: size.width*0.2),
         child: Column(
@@ -60,9 +60,32 @@ class HomePage extends StatelessWidget {
                           TyperAnimatedText('Youtuber', textStyle: AppTextStyle.montesaratStyle(color: Colors.lightBlue)),
                         ])
                       ],
-                    )
-
-
+                    ),
+                    Constants.sizedBox(height: 15),
+                    SizedBox(
+                      width: size.width * 0.5,
+                        child: Text(
+                            "Meet Samson, a talented and dedicated full-stack developer with a passion "
+                            "for building innovative and robust applications. With a strong foundation in "
+                            "programming languages and frameworks, samson possesses the skills and knowledge "
+                            "to tackle complex development challenges. However, where he seeks to enhance their "
+                            "abilities is in the realm of design.",
+                          style: AppTextStyle.normalStyle(),
+                        )
+                    ),
+                    Constants.sizedBox(height: 22),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          maxRadius: 22,
+                          backgroundColor: Appcolors.themeColor,
+                          child: CircleAvatar(
+                            maxRadius: 20,
+                            backgroundColor: Appcolors.bgColor,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ],

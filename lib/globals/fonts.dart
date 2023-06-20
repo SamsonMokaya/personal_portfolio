@@ -27,4 +27,13 @@ class AppTextStyle{
     );
   }
 
+  static TextStyle normalStyle(){
+    return GoogleFonts.signikaNegative(
+      fontWeight: FontWeight.w600,
+      fontSize: 17,
+      color: Colors.white,
+      letterSpacing: 1,
+    );
+  }
+
 }
