@@ -10,13 +10,23 @@ class circleAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      maxRadius: 22,
-      backgroundColor: Appcolors.themeColor,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
       child: CircleAvatar(
-        maxRadius: 20,
-        backgroundColor: Appcolors.bgColor,
-        child: Image.asset(imagePath,),
+        maxRadius: 22,
+        backgroundColor: Appcolors.themeColor,
+        child: CircleAvatar(
+          maxRadius: 20,
+          backgroundColor: Appcolors.bgColor,
+          child: Container(
+            width: 50,
+            height: 50,
+            child: Image.asset(
+              imagePath,
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
       ),
     );
   }
