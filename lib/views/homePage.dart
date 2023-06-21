@@ -78,7 +78,10 @@ class HomePage extends StatelessWidget {
                     Constants.sizedBox(height: 22),
                     Row(
                       children: [
-                        circleAvatar(),
+                        circleAvatar(imagePath: "lib/assets/images/face.png",),
+                        circleAvatar(imagePath: "lib/assets/images/git.png",),
+                        circleAvatar(imagePath: "lib/assets/images/in.png",),
+                        circleAvatar(imagePath: "lib/assets/images/face.png",),
                       ],
                     ),
                   ],

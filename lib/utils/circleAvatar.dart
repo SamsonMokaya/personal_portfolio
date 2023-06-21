@@ -4,7 +4,9 @@ import '../globals/colors.dart';
 import '../globals/image_assets.dart';
 
 class circleAvatar extends StatelessWidget {
-  const circleAvatar({Key? key}) : super(key: key);
+  var imagePath;
+
+  circleAvatar({Key? key,   required this.imagePath}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class circleAvatar extends StatelessWidget {
       child: CircleAvatar(
         maxRadius: 20,
         backgroundColor: Appcolors.bgColor,
-        child: Image.asset(AppAssets.facebook),
+        child: Image.asset(imagePath,),
       ),
     );
   }
