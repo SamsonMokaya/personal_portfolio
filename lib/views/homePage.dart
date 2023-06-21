@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:personalportfolio/globals/Constants.dart';
 import 'package:personalportfolio/globals/fonts.dart';
 import 'package:personalportfolio/globals/colors.dart';
+import 'package:personalportfolio/globals/image_assets.dart';
+import 'package:personalportfolio/utils/circleAvatar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -76,14 +78,7 @@ class HomePage extends StatelessWidget {
                     Constants.sizedBox(height: 22),
                     Row(
                       children: [
-                        CircleAvatar(
-                          maxRadius: 22,
-                          backgroundColor: Appcolors.themeColor,
-                          child: CircleAvatar(
-                            maxRadius: 20,
-                            backgroundColor: Appcolors.bgColor,
-                          ),
-                        ),
+                        circleAvatar(),
                       ],
                     ),
                   ],
